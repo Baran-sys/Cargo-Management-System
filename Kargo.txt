@@ -1,0 +1,21 @@
+GonderiAdi	KategoriIndex	Agirlik	KargoUcreti	TeslimSuresi (gün)
+Elektronik Paket	1	2.4 kg	45.50	3
+Kitap Seti	2	1.2 kg	18.75	2
+Giyim Kolisi	3	3.8 kg	32.00	4
+Ev Aleti	1	6.5 kg	58.90	5
+Ofis Malzemeleri	2	4.0 kg	29.50	2
+Kozmetik Ürünleri	4	1.0 kg	22.30	1
+Gıda Paketi	5	7.2 kg	35.60	2
+Bilgisayar Parçası	1	1.8 kg	49.90	3
+Spor Malzemesi	3	5.0 kg	42.20	4
+Oyuncak Seti	2	2.3 kg	28.00	3
+Ev Dekor Ürünü	4	3.6 kg	31.75	4
+Tıbbi Ekipman	5	2.7 kg	55.40	2
+Telefon	1	0.8 kg	60.00	1
+Mutfak Takımı	3	6.2 kg	38.25	3
+Kırtasiye Kutusu	2	1.9 kg	20.40	2
+Bahçe Aleti	5	8.5 kg	44.10	5
+Evcil Hayvan Ürünü	4	2.1 kg	26.90	3
+Araç Parçası	1	9.0 kg	70.50	5
+Takı Kutusu	4	0.5 kg	19.60	1
+Bebek Ürünü	5	3.3 kg	33.20	2
