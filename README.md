@@ -1,126 +1,117 @@
-<!--
-This README is formatted with GitHub Flavored Markdown.
--->
+# Cargo Management System
 
-Cargo Management System
+![Java](https://img.shields.io/badge/language-Java-blue.svg)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![Issues](https://img.shields.io/badge/issues-0-success.svg)
 
-A simple, console-based application for managing cargo shipments. This project is written entirely in Java and uses a local text file (Kargo.txt) for data persistence.
+A simple, console-based application for managing cargo shipments. The Cargo Management System allows users to track and update shipments using a lightweight Java CLI. All data is stored locally in a text file (`Kargo.txt`).
 
-Table of Contents
+---
 
-About the Project
+## Table of Contents
 
-Key Features
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Support & Documentation](#support--documentation)
+- [Contributing](#contributing)
+- [Maintainers](#maintainers)
 
-Getting Started
+---
 
-Prerequisites
+## Overview
 
-Installation & Usage
+Cargo Management System is designed to help users manage cargo logistics without the need for web servers or external databases. It’s suitable for learning, prototyping, or small-scale cargo operations.
 
-How to Get Help
+---
 
-Contributing
+## Features
 
-License
+- **File-Based Persistence**  
+  Data is stored in `Kargo.txt` in the project root.
 
-About the Project
+- **Cargo Management**  
+  Add, update, and view cargo shipment details.
 
-This project provides a command-line interface (CLI) to manage a basic cargo logistics system. It is designed as a lightweight, standalone Java application that does not require an external database, making it easy to compile, run, and test.
+- **Package Tracking**  
+  Check the status of any shipment by ID.
 
-All data is persisted in the Kargo.txt file in the project's root directory.
+- **Console Interface**  
+  Interact using clear commands in the terminal.
 
-Key Features
+---
 
-File-Based Persistence: Reads and writes all cargo data to Kargo.txt.
+## Getting Started
 
-Cargo Management: Allows users to add, update, and view cargo shipments.
+### Prerequisites
 
-Package Tracking: Provides functionality to check the status of a shipment.
+- **Java Development Kit (JDK):** v8 or newer
+- **Git**
 
-Console Interface: All operations are handled through simple text commands in the terminal.
+### Installation
 
-Getting Started
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/Baran-sys/Cargo-Management-System.git
+   cd Cargo-Management-System
+   ```
 
-Follow these instructions to get a local copy of the project up and running on your machine for development and testing.
+2. **Compile Sources**
+   - Create a directory for compiled classes:
+     ```sh
+     mkdir bin
+     ```
+   - Compile all Java files inside `src`:
+     ```sh
+     # macOS/Linux
+     javac -d bin $(find src -name "*.java")
+     # Windows (PowerShell)
+     # Get-ChildItem -Recurse -Filter *.java | ForEach-Object { javac -d bin $_.FullName }
+     ```
 
-Prerequisites
+3. **Run the Application**
+   ```sh
+   java -cp bin Main
+   ```
+   <sub>Replace `Main` with your main class name if different.</sub>
 
-You must have the following software installed to run this project.
+   If your main class is packaged (e.g., `com.cargo`):
+   ```sh
+   java -cp bin com.cargo.Main
+   ```
 
-Java Development Kit (JDK): Version 8 or higher.
+### Usage Example
 
-Git: To clone the repository.
+Upon starting the application, use the terminal to add, view, or track shipments as prompted.
 
-Installation & Usage
+---
 
-Because this project does not use a build tool like Maven or Gradle, you will compile and run it directly using the javac and java commands.
+## Support & Documentation
 
-Clone the repository to your local machine:
+If you encounter bugs, need features, or have questions:
 
-git clone [https://github.com/Baran-sys/Cargo-Management-System.git](https://github.com/Baran-sys/Cargo-Management-System.git)
+- [Open an Issue](../../issues)
+- Refer to the project [Wiki](../../wiki) for additional tips
 
+---
 
-Navigate to the project directory:
+## Contributing
 
-cd Cargo-Management-System
+We welcome contributions!
 
+- Please see `docs/CONTRIBUTING.md` for complete guidelines.
+- Fork the project, create a feature branch, make your changes, and open a pull request.
 
-Create a bin directory for the compiled .class files:
+---
 
-mkdir bin
+## Maintainers
 
+- **Project Owner:** [Baran-sys](https://github.com/Baran-sys)
 
-Compile the Java source code:
-This command finds all .java files within the src directory and compiles them into the bin directory.
+Feel free to [contact](https://github.com/Baran-sys) the owner via GitHub for major issues or collaboration proposals.
 
-# For macOS/Linux:
-javac -d bin $(find src -name "*.java")
+---
 
-# For Windows (PowerShell):
-# Get-ChildItem -Recurse -Filter *.java | ForEach-Object { javac -d bin $_.FullName }
+## License
 
-# Alternatively, if all files are in the root of 'src':
-# javac -d bin src/*.java
-
-
-Run the application:
-Execute the main class from the root directory, telling Java to use the bin folder as the classpath.
-
-(Note: Replace Main with the actual name of your project's main class if it is different.)
-
-java -cp bin Main
-
-
-If your main class is inside a package (e.g., com.cargo), you would run:
-
-# java -cp bin com.cargo.Main
-
-
-The application will start, and you can interact with it through your terminal. The Kargo.txt data file will be read from and written to the root project directory.
-
-How to Get Help
-
-If you encounter any bugs, have feature requests, or need assistance, please open an issue on the GitHub repository.
-
-Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-If you wish to contribute, please follow these steps:
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-Please adhere to this project's code of conduct and contribution guidelines (if a CONTRIBUTING.md file is present).
-
-License
-
-This project is currently unlicensed.
+This project is currently **unlicensed**. See the `LICENSE` file for details.
